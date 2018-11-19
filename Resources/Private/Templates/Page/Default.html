@@ -2,7 +2,28 @@
 <f:section name="Main">
 
     <div class="container">
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Sekcja górna</h3>
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>Treść = lewo</h4>
+            </div>
+            <div class="col-sm-4">
+                <h4>Treść - środek</h4>
+            </div>
+            <div class="col-sm-4">
+                <h4>Treść - prawo</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Sekcja dolna</h3>
+            </div>
+        </div>
     </div>
 
 </f:section>
