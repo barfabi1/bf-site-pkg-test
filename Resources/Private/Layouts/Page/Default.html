@@ -35,11 +35,16 @@
             <f:for each="{mainnavigation}" as="mainnavigationItem">
                 <f:if condition="{mainnavigationItem.children}">
                     <f:then>
-                        <div class="dropdown-menu" aria-labelledby="Preview">
-                            <f:for each="{mainnavigationItem.children}" as="child">
-                                <a class="dropdown-item" href="{child.link}" target="{child.target}" title="{child.title}">{child.title}</a>
-                            </f:for>
-                        </div>
+                        <li class="nav-item dropdown {f:if(condition: mainnavigationItem.active, then:'active')}">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                {child.title}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Preview">
+                                <f:for each="{mainnavigationItem.children}" as="child">
+                                    <a class="dropdown-item" href="{child.link}" target="{child.target}" title="{child.title}">{child.title}</a>
+                                </f:for>
+                            </div>
+                        </li>
                     </f:then>
                     <f:else>
                         <li class="nav-item">
