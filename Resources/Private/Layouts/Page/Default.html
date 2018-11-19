@@ -1,35 +1,10 @@
-<!--
-<ul>
-    <f:for each="{mainnavigation}" as="mainnavigationItem">
-        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
-                {mainnavigationItem.title}
-            </a>
-            <f:if condition="{mainnavigationItem.children}">
-                <ul>
-                    <f:for each="{mainnavigationItem.children}" as="child">
-                        <li class="{f:if(condition: child.active, then:'active')}">
-                            <a href="{child.link}" target="{child.target}" title="{child.title}">
-                                {child.title}
-                            </a>
-                        </li>
-                    </f:for>
-                </ul>
-            </f:if>
-        </li>
-    </f:for>
-</ul>
--->
-<!-- <nav class="navbar navbar-expand-sm navbar-light bg-faded"> -->
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Brand -->
     <a class="navbar-brand" href="#">Logo</a>
 
-    <!-- Links -->
     <div class="collapse navbar-collapse" id="nav-content">
         <ul class="navbar-nav">
             <f:for each="{mainnavigation}" as="mainnavigationItem">
@@ -37,7 +12,7 @@
                     <f:then>
                         <li class="nav-item dropdown {f:if(condition: mainnavigationItem.active, then:'active')}">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                {child.title}
+                                {mainnavigationItem.title}
                             </a>
                             <div class="dropdown-menu" aria-labelledby="Preview">
                                 <f:for each="{mainnavigationItem.children}" as="child">
