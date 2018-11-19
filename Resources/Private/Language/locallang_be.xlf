@@ -9,7 +9,25 @@
             <trans-unit id="backend_layout.default">
                 <source>Default</source>
             </trans-unit>
+            <trans-unit id="backend_layout.devblog_layout_bf">
+                <source>Devblog Layout BF</source>
+            </trans-unit>
             <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.section_top">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content_1">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content_2">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content_3">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.section_bottom">
                 <source>Normal</source>
             </trans-unit>
         </body>

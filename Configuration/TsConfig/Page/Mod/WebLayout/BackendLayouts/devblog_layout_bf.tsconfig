@@ -1,0 +1,55 @@
+#
+# BACKENDLAYOUT: devblog_layout_bf
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.devblog_layout_bf
+                config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 3
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.column.section_top
+                                        colPos = 0
+                                        colspan = 3
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_1
+                                        colPos = 10
+                                    }
+                                    2 {
+                                        name = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_2
+                                        colPos = 20
+                                    }
+                                    3 {
+                                        name = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content_3
+                                        colPos = 30
+                                    }
+                                }
+                            }
+                            3 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.column.section_bottom
+                                        colPos = 40
+                                        colspan = 3
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:developer_blog/Resources/Public/Images/BackendLayouts/devblog_layout_bf.png
+            }
+        }
+    }
+}
