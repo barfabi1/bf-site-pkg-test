@@ -16,19 +16,19 @@
                 <source>Normal</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.section_top">
-                <source>Normal</source>
+                <source>Górna sekcja</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.content_1">
-                <source>Normal</source>
+                <source>Treść - Lewo</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.content_2">
-                <source>Normal</source>
+                <source>Treść - Środek</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.content_3">
-                <source>Normal</source>
+                <source>Treść - Prawo</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.section_bottom">
-                <source>Normal</source>
+                <source>Dolna sekcja</source>
             </trans-unit>
         </body>
     </file>
