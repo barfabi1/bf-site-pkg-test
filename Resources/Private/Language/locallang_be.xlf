@@ -12,6 +12,10 @@
             <trans-unit id="backend_layout.devblog_layout_bf">
                 <source>Devblog Layout BF</source>
             </trans-unit>
+            <trans-unit id="backend_layout.history">
+                <source>Historia</source>
+            </trans-unit>
+
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
             </trans-unit>

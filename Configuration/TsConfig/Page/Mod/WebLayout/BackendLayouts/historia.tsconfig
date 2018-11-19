@@ -1,0 +1,55 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+                config {
+                    backend_layout {
+                       colCount = 3
+                       rowCount = 3
+                       rows {
+                         1 {
+                           columns {
+                             1 {
+                               name = 0x0
+                               colspan = 3
+                               colPos = 1000
+                             }
+                           }
+                         }
+                         2 {
+                           columns {
+                             1 {
+                               name = 0x1
+                               colPos = 1001
+                             }
+                             2 {
+                               name = 1x1
+                               colPos = 1002
+                             }
+                             3 {
+                               name = 2x1
+                               colPos = 1003
+                             }
+                           }
+                         }
+                         3 {
+                           columns {
+                             1 {
+                               name = 0x2
+                               colspan = 3
+                               colPos = 1004
+                             }
+                           }
+                         }
+                       }
+                    }
+                }
+                icon = EXT:developer_blog/Resources/Public/Images/BackendLayouts/default.png
+            }
+        }
+    }
+}
