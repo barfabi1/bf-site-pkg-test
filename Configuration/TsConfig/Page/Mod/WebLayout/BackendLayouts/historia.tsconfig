@@ -5,7 +5,7 @@ mod {
     web_layout {
         BackendLayouts {
             default {
-                title = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+                title = LLL:EXT:developer_blog/Resources/Private/Language/locallang_be.xlf:backend_layout.history
                 config {
                     backend_layout {
                        colCount = 3
