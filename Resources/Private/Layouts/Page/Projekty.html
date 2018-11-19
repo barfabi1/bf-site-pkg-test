@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#">Logo</a>
+
+    <div class="collapse navbar-collapse" id="nav-content">
+        <ul class="navbar-nav">
+            <f:for each="{mainnavigation}" as="mainnavigationItem">
+                <f:if condition="{mainnavigationItem.children}">
+                    <f:then>
+                        <li class="nav-item dropdown {f:if(condition: mainnavigationItem.active, then:'active')}">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                {mainnavigationItem.title}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="Preview">
+                                <f:for each="{mainnavigationItem.children}" as="child">
+                                    <a class="dropdown-item" href="{child.link}" target="{child.target}" title="{child.title}">{child.title}</a>
+                                </f:for>
+                            </div>
+                        </li>
+                    </f:then>
+                    <f:else>
+                        <li class="nav-item">
+                            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}" class="nav-link {f:if(condition: mainnavigationItem.active, then:'active')}">
+                                {mainnavigationItem.title}
+                            </a>
+                        </li>
+                    </f:else>
+                </f:if>
+            </f:for>
+        </ul>
+    </div>
+</nav>
+
+<f:render section="Main" />
