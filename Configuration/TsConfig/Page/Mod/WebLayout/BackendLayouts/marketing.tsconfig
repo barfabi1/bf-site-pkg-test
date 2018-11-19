@@ -1,0 +1,42 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            marketing {
+                title = Marketing
+                config {
+                  backend_layout {
+                    colCount = 2
+                    rowCount = 2
+                    rows {
+                      1 {
+                        columns {
+                          1 {
+                            name = 0x0
+                            colspan = 2
+                            colPos = 555
+                          }
+                        }
+                      }
+                      2 {
+                        columns {
+                          1 {
+                            name = 0x1
+                            colPos = 556
+                          }
+                          2 {
+                            name = 1x1
+                            colPos = 557
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                icon = EXT:developer_blog/Resources/Public/Images/BackendLayouts/default.png
+            }
+        }
+    }
+}
